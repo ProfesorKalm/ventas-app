@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-12">
+        <h3>Formulario Producto</h3>
+        <hr>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">        
+        <div class="form-floating">
+            <input [(ngModel)]="producto.nombre" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"/>
+            <label for="floatingTextarea">Nombre producto</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input [(ngModel)]="producto.descripcion" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"/>
+            <label for="floatingTextarea">Descripcion producto</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input   [(ngModel)]="producto.cantidad" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"/>
+            <label for="floatingTextarea">Cantidad</label>
+        </div>        
+        <br>
+        <button (click)="agregarProducto()" type="button" class="btn btn-success">Agregar</button>
+    </div>
+</div>
+
